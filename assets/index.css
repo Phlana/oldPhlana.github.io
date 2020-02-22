@@ -1,9 +1,15 @@
 body {
-
+    background-color: #2ecbdc;
 }
 
 .arrows {
     width: 100px;
     height: 100px;
     background-color: #0F0;
+}
+
+.button {
+    width: 60px;
+    height: 20px;
+    background-color: #FF6200;
 }
