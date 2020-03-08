@@ -1,22 +1,59 @@
 body {
+	background-color: #00AABB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+/* custom scrollbars */
+::-webkit-scrollbar {
+	width: 5px;
+	
+	height: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: #00AABB;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #008899;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #006677;
+}
+
+.animation-wrapper {
     background-color: #2ecbdc;
+	width: 100%;
+	max-width: 910px;
+	margin-left: 32px;
+	margin-right: 32px;
 }
 
-.arrows {
-    width: 256px;
-    height: 256px;
-    background-color: #0F0;
+.name {
+	color: #FFFFFF;
+	font-family: 'Space Mono', monospace;
+	font-size: 100px;
+	text-align: center;
 }
 
-.arrowimg {
-	width: 128px;
-	height: 128px;
-	/* needed to remove extra padding from images */
-	float: left;
+.line {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 800px;
+	height: 10px;
+	margin: 0 auto;
 }
 
-.button {
-    width: 60px;
-    height: 20px;
-    background-color: #FF6200;
+.line div {
+	width: 40px;
+	height: 10px;
+	border: 1px solid #FFFFFF;
+	background-color: #FFFFFF;
 }
