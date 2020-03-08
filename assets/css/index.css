@@ -60,3 +60,8 @@ body {
 	border: 1px solid #FFFFFF;
 	background-color: #FFFFFF;
 }
+
+.hidden {
+	visibility: hidden;
+	background-color: #2ecbdc;
+}
