@@ -7,26 +7,40 @@
 
     <link rel="icon" type="image/png" href="assets/images/icon.png">
     <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    
+    <!-- reset css to reset default styles -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
 
     <!-- animation library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
+
+    <!-- space font -->
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="arrows">
-        <img src="assets/images/arrows/4th.png" class="arrowimg" alt="4th">
-        <img src="assets/images/arrows/8th.png" class="arrowimg" alt="8th">
-        <img src="assets/images/arrows/16th.png" class="arrowimg" alt="16th">
-        <img src="assets/images/arrows/32th.png" class="arrowimg" alt="32th">
-        <!-- <img src="assets/images/arrows/64th.png" class="arrowimg" alt="64th">
-        <img src="assets/images/arrows/12th.png" class="arrowimg" alt="12th">
-        <img src="assets/images/arrows/24th.png" class="arrowimg" alt="24th">
-        <img src="assets/images/arrows/48th.png" class="arrowimg" alt="48th"> -->
+    <div class="animation-wrapper">
+        <div class="line top"></div>
+        <div class="name">Phlana</div>
+        <div class="line bottom"></div>
     </div>
-    <div class="play button">play</div>
-    <div class="pause button">pause</div>
-    <div class="restart button">restart</div>
-    <!-- animation script must go after elements -->
-    <script src="lib/arrows.js"></script>
+
+    <div class="controls hidden">
+        <!-- buttons for playback controls -->
+        <div class="play button">
+            <img src="assets/images/play.png" width="32" height="32">
+        </div>
+        <div class="pause button">
+            <img src="assets/images/pause.png" width="32" height="32">
+        </div>
+        <!-- slider for seeking -->
+        <input type="range" class="slider seek" min="0" max="100" value="0" step="0.01">
+    </div>
+
+    <!-- <div class="info">
+        sample text
+    </div> -->
+
+    <script src="lib/home.js"></script>
 </body>
 <script src="lib/scroll.js"></script>
 </html>
