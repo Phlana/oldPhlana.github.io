@@ -46,6 +46,7 @@ body {
 }
 
 .flashy {
+	/*background-color: #AAAAAA;*/
 	position: relative;
 	width: 100%;
 	max-width: 800px;
