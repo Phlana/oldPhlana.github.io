@@ -18,22 +18,26 @@
     <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="animation-wrapper">
-        <div class="line top"></div>
-        <div class="name">Phlana</div>
-        <div class="line bottom"></div>
-    </div>
+    <div class="initial-screen">
+        <div class="flashy">
+            <div class="animation-wrapper">
+                <div class="line top"></div>
+                <div class="name">Phlana</div>
+                <div class="line bottom"></div>
+            </div>
 
-    <div class="controls hidden">
-        <!-- buttons for playback controls -->
-        <div class="play button">
-            <img src="assets/images/play.png" width="32" height="32">
+            <div class="controls-wrapper hidden">
+                <!-- buttons for playback controls -->
+                <div class="play button">
+                    <img src="assets/images/play.png" width="32" height="32">
+                </div>
+                <div class="pause button">
+                    <img src="assets/images/pause.png" width="32" height="32">
+                </div>
+                <!-- slider for seeking -->
+                <input type="range" class="slider seek" min="0" max="100" value="0" step="0.01">
+            </div>
         </div>
-        <div class="pause button">
-            <img src="assets/images/pause.png" width="32" height="32">
-        </div>
-        <!-- slider for seeking -->
-        <input type="range" class="slider seek" min="0" max="100" value="0" step="0.01">
     </div>
 
     <!-- <div class="info">
