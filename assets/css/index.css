@@ -9,6 +9,12 @@
 	--blue1: #00AABB;
 	--blue2: #008899;
 	--blue3: #006677;
+
+	--white: #f1f3f3;
+	--offwhite: #d0d6d7;
+	--grey: #373a3e;
+	--lime: #5faa19;
+	--purple: #65209d;
 }
 
 body {
@@ -22,8 +28,8 @@ body {
 
 /* custom scrollbars */
 ::-webkit-scrollbar {
-	width: 5px;
-	height: 5px;
+	width: 0px;
+	height: 0px;
 }
 
 ::-webkit-scrollbar-track {
@@ -39,7 +45,6 @@ body {
 }
 
 .initial-screen {
-	/*background-color: #AAAAAA;*/
 	width: 100%;
 	height: 100vh;
 	display: flex;
@@ -48,8 +53,7 @@ body {
 	top: 0;
 }
 
-.flashy {
-	/*background-color: #AAAAAA;*/
+.logo-animation {
 	position: relative;
 	width: 100%;
 	max-width: 800px;
@@ -155,6 +159,21 @@ body {
 	background: var(--blue3);
 }
 
+.scroll-animation {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 100vh;
+	background-color: var(--offwhite);
+}
+
+polygon {
+	fill: lime;
+	stroke: purple;
+	stroke-width: 1;
+}
+
+/*
 .content {
 	background-color: var(--bg-color-dark);
 	width: 100%;
@@ -163,12 +182,15 @@ body {
 	top: 100vh;
 }
 
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
 .banner {
 	width: 100%;
 	background-color: #AAAAAA;
-	position: -webkit-sticky; /* Safari */
-	position: sticky;
-	top: 0;
 
 	display: flex;
 	align-items: center;
@@ -179,3 +201,4 @@ body {
 	width: 128px;
 	height: 128px;
 }
+*/
