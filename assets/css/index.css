@@ -29,6 +29,7 @@ body {
 /* custom scrollbars */
 ::-webkit-scrollbar {
 	width: 0px;
+	/*width: 5px;*/
 	height: 5px;
 }
 
@@ -62,7 +63,7 @@ body {
 
 .animation-wrapper {
 	position: relative;
-	width: inherit;
+	width: 100%;
 }
 
 .name {
@@ -103,7 +104,7 @@ body {
 	display: flex;
 	position: relative;
 	bottom: 0;
-	width: inherit;
+	width: 100%;
 	justify-content: center;
 	padding-top: 10px;
 }
@@ -175,8 +176,6 @@ body {
 	height: 100vh;
 	position: fixed;
 	top: 0;
-	background-color: var(--offwhite);
-	opacity: 0.3;
 }
 
 /*
